@@ -1,0 +1,10 @@
+
+
+img {
+  width: 300px;
+
+}
+
+.TNG, .TOS, .DS9 {
+  display: none;
+}
