@@ -7,4 +7,9 @@ img {
 
 .TNG, .TOS, .DS9 {
   display: none;
+  margin-top: 20px;
+}
+
+#captain-quiz-header {
+  margin-top: 20px;
 }
