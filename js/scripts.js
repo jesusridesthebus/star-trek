@@ -36,4 +36,17 @@ $(function(){
     }
     event.preventDefault();
   });
+
+  $("#captain-quiz").submit(function(event) {
+    var diplomacy = $("input:radio[name=first-question]:checked").val();
+    var firstOfficer = $("input:radio[name=second-question]:checked").val();
+    var klingon = $("input:radio[name=third-question]:checked").val();
+
+    $(".picard").hide();
+    $(".kirk").hide();
+    $(".janeway").hide();
+
+    if(diplomacy === "kirk")
+    console.log(kirk);
+  });
 });
