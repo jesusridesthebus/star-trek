@@ -13,7 +13,7 @@
   </head>
   <body>
     <h1>What Star Trek Series should you watch</h1>
-    <div class="container">
+    <main class="container">
       <form id="formOne">
         <div class="form-group">
           <label for="age">Age</label>
@@ -36,7 +36,7 @@
           <p>Star Trek: The Next Generation (TNG and ST:TNG) is an American science fiction television series created by Gene Roddenberry. It originally aired from September 28, 1987 to May 23, 1994 on syndication, spanning 178 episodes over the course of seven seasons. The third series in the Star Trek franchise, it is the second sequel to Star Trek: The Original Series. Set in the 24th century, when Earth is part of a United Federation of Planets, it follows the adventures of a Starfleet starship, the USS Enterprise-D, in its exploration of the Milky Way galaxy.</p>
         </div>
       </div>
-      <div class="container">
+      <section class="container">
         <div class="TOS">
           <h2>Original Series</h2>
           <img class="kirk" src="img/kirk.jpg" alt="kirk">
@@ -44,14 +44,85 @@
 
           <p>The show is set in the Milky Way galaxy, roughly during the 2260s. The ship and crew are led by Captain James T. Kirk (William Shatner), First Officer and Science Officer Spock (Leonard Nimoy), and Chief Medical Officer Leonard McCoy (DeForest Kelley). Shatner's voice-over introduction during each episode's opening credits stated the starship's purpose:</p>
         </div>
-      </div>
-      <div class="container">
+      </section>
+      <section class="container">
         <div class="DS9">
           <h2>Deep Space 9</h2>
           <img class="sisko" src="img/sisko.jpeg" alt="sisko">
           <p>Star Trek: Deep Space Nine (DS9) is an American science fiction television series created by Rick Berman and Michael Piller. It originally aired from January 3, 1993, to June 2, 1999, in syndication, spanning 176 episodes over seven seasons. The fourth series in the Star Trek franchise, it served as the third sequel to Star Trek: The Original Series. Set in the 24th century, when Earth is part of a United Federation of Planets, it is based on the eponymous space station Deep Space Nine, located adjacent to a wormhole connecting Federation territory to the Gamma Quadrant on the far side of the Milky Way galaxy.</p>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
+    <h1 id="captain-quiz-header">Which Star Trek captain are you?</h1>
+    <main class="container">
+      <form id="captain-quiz">
+        <h3>For each question, choose the one that best applies to you:</h3>
+        <div class="form-group" id="first-question">
+          1. What is your style of diplomacy?
+          <div class="radio1">
+            <label>
+              <input type="radio" name="first-question" value="janeway" checked>
+              Making peace between individuals
+            </label>
+          </div>
+          <div class="radio1">
+            <label>
+              <input type="radio" name="first-question" value="kirk">
+              Fists
+            </label>
+          </div>
+          <div class="radio1">
+            <label>
+              <input type="radio" name="first-question" value="picard">
+              Listen to all sides, while drinking Earl Grey
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group" id="second-question">
+          1. Who's your first officer?
+          <div class="radio2">
+            <label>
+              <input type="radio" name="second-question" value="kirk" checked>
+              Spock
+            </label>
+          </div>
+          <div class="radio2">
+            <label>
+              <input type="radio" name="second-question" value="janeway">
+              Tuvok
+            </label>
+          </div>
+          <div class="radio2">
+            <label>
+              <input type="radio" name="second-question" value="picard">
+              Riker
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group" id="third-question">
+          1. How would you handle a Klingon attack?
+          <div class="radio3">
+            <label>
+              <input type="radio" name="third-question" value="picard" checked>
+              They're our allies.. they would never attack us!
+            </label>
+          </div>
+          <div class="radio3">
+            <label>
+              <input type="radio" name="third-question" value="janeway">
+              We've got bigger problems.
+            </label>
+          </div>
+          <div class="radio3">
+            <label>
+              <input type="radio" name="third-question" value="kirk">
+              Send some red-shirts after them.
+            </label>
+          </div>
+        </div>
+      </form>
+    </main>
   </body>
 </html>
