@@ -2,7 +2,6 @@
 
 img {
   width: 300px;
-
 }
 
 .TNG, .TOS, .DS9 {
@@ -12,4 +11,8 @@ img {
 
 #captain-quiz-header {
   margin-top: 20px;
+}
+
+.picard, .kirk, .janeway {
+  display: none;
 }
