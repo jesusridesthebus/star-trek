@@ -2,6 +2,8 @@
 
 img {
   width: 300px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .TNG, .TOS, .DS9 {
@@ -13,6 +15,7 @@ img {
   margin-top: 20px;
 }
 
-.captain-picard, .captain-kirk, .captain-janeway {
+.captain-picard, .captain-kirk, .captain-janeway, .red-shirt {
   display: none;
+  margin-top: 20px;
 }
