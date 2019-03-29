@@ -47,23 +47,32 @@ $(function(){
     var firstOfficer = $("input:radio[name=second-question]:checked").val();
     var klingon = $("input:radio[name=third-question]:checked").val();
 
-    var diplomacyKirk = $("input:radio[name=first-question]:checked").attr("kirk1");
-    var firstOfficerKirk = $("input:radio[name=first-question]:checked").attr("kirk2");
-    var klingonKirk = $("input:radio[name=first-question]:checked").attr("kirk3");
-
-    var diplomacyPicard = $("input:radio[name=second-question]:checked").attr("picard1");
-    var firstOfficerPicard = $("input:radio[name=second-question]:checked").attr("picard2");
-    var klingonPicard = $("input:radio[name=second-question]:checked").attr("picard3");
-
-    var diplomacyJaneway = $("input:radio[name=third-question]:checked").attr("janeway1");
-    var firstOfficerJaneway = $("input:radio[name=third-question]:checked").attr("janeway2");
-    var klingonJaneway = $("input:radio[name=third-question]:checked").attr("janeway3");
-
-    if(diplomacy === diplomacyKirk && firstOfficer === diplomacyKirk && klingon === klingonKirk) {
+    if (diplomacy === "kirk1" && firstOfficer === "kirk2" && klingon === "kirk3") {
       $(".captain-kirk").show();
+    } else if (diplomacy === "kirk1" && firstOfficer === "kirk2") {
+      $(".captain-kirk").show();
+    } else if (firstOfficer === "kirk2" && klingon === "kirk3") {
+      $(".captain-kirk").show();
+    } else if (diplomacy === "kirk1" && klingon === "kirk3") {
+      $(".captain-kirk").show();
+    } else if (diplomacy === "picard1" && firstOfficer === "picard2" && klingon === "picard3") {
+      $(".captain-picard").show();
+    } else if (diplomacy === "picard1" && firstOfficer === "picard2") {
+      $(".captain-picard").show();
+    } else if (firstOfficer === "picard2" && klingon === "picard3") {
+      $(".captain-picard").show();
+    } else if (diplomacy === "picard1" && klingon === "picard3") {
+      $(".captain-picard").show();
+    } else if (diplomacy === "janeway1" && firstOfficer === "janeway2" && klingon === "janeway3") {
+      $(".captain-janeway").show();
+    } else if (diplomacy === "janeway1" && firstOfficer === "janeway2") {
+      $(".captain-janeway").show();
+    } else if (firstOfficer === "janeway2" && klingon === "janeway3") {
+      $(".captain-janeway").show();
+    } else if (diplomacy === "janeway1" && klingon === "janeway3") {
+      $(".captain-janeway").show();
+    } else {
+      $(".red-shirt").show();
     }
-    console.log("diplomacy", diplomacy);
-    console.log("firstOfficer", firstOfficer);
-    console.log("klingon", klingon);
   });
 });
