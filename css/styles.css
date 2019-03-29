@@ -19,3 +19,11 @@ img {
   display: none;
   margin-top: 20px;
 }
+
+.btn-dark {
+  background: #D21C1C;
+}
+
+body {
+  color: white;
+}
