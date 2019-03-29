@@ -42,6 +42,7 @@ $(function(){
     $(".captain-picard").hide();
     $(".captain-kirk").hide();
     $(".captain-janeway").hide();
+    $(".red-shirt").hide();
 
     var diplomacy = $("input:radio[name=first-question]:checked").val();
     var firstOfficer = $("input:radio[name=second-question]:checked").val();
